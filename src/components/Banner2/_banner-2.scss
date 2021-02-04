@@ -1,0 +1,41 @@
+.banner-2__section {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 2rem;
+
+  & > :first-child {
+    grid-column: 2;
+    grid-row: 1 / 4;
+
+  }
+}
+
+.banner-2__header {
+  align-self: end;
+}
+
+.banner-2__headline {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+  max-width: 20rem;
+}
+
+.banner-2__subhead {
+  font-size: 1.5rem;
+  max-width: 25rem;
+}
+
+.banner-2__text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.banner-2__image {
+  width: 100%;
+}

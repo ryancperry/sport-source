@@ -1,0 +1,27 @@
+// Theme colors to generate custom properties
+$theme-colors: (
+  'primary': #72818b,
+  'secondary': #4f57aa,
+  'tertiary': #454857,
+  'gray': #676767,
+  'cta': #2e8321,
+  'warning': #8f002e,
+);
+
+// Generates a custom properties palate from the theme colors with the color, one shade, and three tints for each item
+:root {
+  @each $color-name, $color in $theme-colors {
+    --#{$color-name}: #{$color};
+    --#{$color-name}-dark: #{mix($color, #000, 75)};
+    --#{$color-name}-light: #{mix($color, #fff, 75)};
+    --#{$color-name}-lighter: #{mix($color, #fff, 50)};
+    --#{$color-name}-lightest: #{mix($color, #fff, 25)};
+  }
+  // Define any other CSS custom properties
+  --black: #2d2d2d;
+  --white: #fcfcfc;
+  @include shade-variant('gray', #f2f2f2);
+  @include opacity-variant('black', #000);
+  @include opacity-variant('white', #fff);
+}
+

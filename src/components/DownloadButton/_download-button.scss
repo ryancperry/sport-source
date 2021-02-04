@@ -1,0 +1,27 @@
+.download-button {
+  align-items: center;
+  background-color: #d56942;
+  border: 0 none;
+  border-radius: 2rem;
+  color: var(--white);
+  display: inline-grid;
+  fill: var(--white);
+  gap: 0.5rem;
+  grid-template-columns: 1.5rem 1fr;
+  justify-self: center;
+  line-height: 1;
+  padding: 0.875rem 1.5rem 1rem;
+
+  .download-button__text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  svg {
+    grid-column: 1;
+    grid-row: 1;
+    width: 1.125rem;
+  }
+}

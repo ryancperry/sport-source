@@ -1,0 +1,40 @@
+.banner__header {
+  display: grid;
+}
+
+.banner__image-list {
+  display: grid;
+}
+
+.banner__headline,
+.banner__image-list,
+.banner__image-item {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.banner__headline {
+  color: var(--white);
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  max-width: 50rem;
+  padding: 2rem;
+  place-self: center;
+  position: relative;
+  text-shadow: 2px 3px 4px var(--black-60),
+    -2px -2px 4px  var(--black-35);
+  width: 94%;
+  z-index: 1;
+}
+
+.banner__image {
+  height: 30rem;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+  width: 100%;
+
+  &.active {
+    opacity: 1;
+  }
+}

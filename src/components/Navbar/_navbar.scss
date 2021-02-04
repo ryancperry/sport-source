@@ -1,0 +1,17 @@
+.navbar {
+  align-items: center;
+  background-color: var(--white);
+  display: grid;
+  grid-column: 1 / -1;
+  grid-gap: 2rem;
+  grid-row: 1;
+  padding: 0.5rem 1.25rem;
+  // position: sticky;
+  // top: 0;
+
+}
+
+.navbar__logo {
+  justify-self: center;
+  width: 15rem;
+}

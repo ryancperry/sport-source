@@ -1,0 +1,79 @@
+.radio {
+  --active-color: var(--primary);
+  --default-color: var(--gray-light);
+      
+  align-items: center;
+  color: var(--default-color);
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: min-content auto;
+  padding: 0.25rem 0;
+        
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.radio__control {
+  border: 0.1em solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  height: 1em;
+  place-items: center;
+  transform: translateY(-0.05em);
+  width: 1em;
+
+  &::before {
+    border-radius: 50%;
+    box-shadow: inset 0.5em 0.5em var(--active-color);
+    content: '';
+    display: block;
+    height: 0.5em;
+    transform: scale(0);
+    transition: 180ms transform ease-in-out;
+    width: 0.5em;    
+  }
+}
+
+.radio__fieldset {
+  border: 0 none;
+  padding: 1rem;
+}
+
+.radio__group-wrapper {
+  display: grid;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 0.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(25px, 130px));
+}
+
+.radio__input {
+  appearance: none;
+    
+  &:checked + .radio__control {
+    border-color: currentColor;
+  }
+    
+  &:checked + .radio__control::before {
+    transform: scale(1);
+  }
+    
+  &:focus + .radio__control {
+    box-shadow: 0 0 0.15em 0.1em currentColor;
+  }
+}
+
+.radio__input-group {
+  display: flex;
+  
+}
+
+.radio__label {
+  color: var(--black);
+  line-height: 1;
+}
+
+.radio__legend {
+  font-weight: 700;
+  grid-column: 1 / -1;
+}

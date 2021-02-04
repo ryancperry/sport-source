@@ -1,0 +1,20 @@
+fieldset {
+  border: 0 none;
+  padding: 1rem;
+}
+
+.text-input__label {
+  display: grid;
+  grid-row-gap: 0.5rem;
+}
+
+.text-input__input {
+  border: 1px solid var(--tertiary-lighter);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.text-input__label-text {
+  font-weight: bold;
+}
+
