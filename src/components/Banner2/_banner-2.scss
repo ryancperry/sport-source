@@ -2,17 +2,9 @@
   display: grid;
   grid-column-gap: 2rem;
   grid-row-gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto auto;
   margin: 0 auto;
   max-width: 75rem;
   padding: 2rem;
-
-  & > :first-child {
-    grid-column: 2;
-    grid-row: 1 / 4;
-
-  }
 }
 
 .banner-2__header {
@@ -37,5 +29,23 @@
 }
 
 .banner-2__image {
+  max-width: 35rem;
   width: 100%;
+}
+
+@media (min-width: 750px) {
+  .banner-2__section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
+  
+    & > :first-child {
+      grid-column: 2;
+      grid-row: 1 / 4;
+  
+    }
+  }
+  
+  .banner-2__header {
+    align-self: end;
+  }
 }

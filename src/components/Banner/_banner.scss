@@ -15,16 +15,19 @@
 
 .banner__headline {
   color: var(--white);
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.1rem;
   max-width: 50rem;
-  padding: 2rem;
+  padding: 1rem;
   place-self: center;
   position: relative;
   text-shadow: 2px 3px 4px var(--black-60),
     -2px -2px 4px  var(--black-35);
   width: 94%;
   z-index: 1;
+  @media (min-width: 750px) {
+    font-size: 4rem;
+  }
 }
 
 .banner__image {

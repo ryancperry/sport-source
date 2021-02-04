@@ -7,9 +7,9 @@ const Banner2 = () => {
       <Image
         alt="Sport Source phone app"
         className="banner-2__image"
-        height={705}
+        layout="fill"
         src="/images/banner-phones.png"
-        width={600}
+        unsized
       />
       <header className="banner-2__header">
         <h2 className="banner-2__headline">rethink the game</h2>
