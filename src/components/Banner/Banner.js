@@ -57,7 +57,6 @@ const Banner = () => {
                 alt={text}
                 className={`banner__image${active ? ' active' : ''}`}
                 layout="fill"
-                objectFit="cover"
                 src={image}
                 priority
                 unsized
