@@ -3,6 +3,7 @@
 import Head from 'next/head';
 import { Banner, Banner2, DetailsExample } from '../src/components';
 import DownloadButton from '../src/components/DownloadButton/DownloadButton';
+import Features from '../src/containers/Features/Features';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <main className="home__main">
         <Banner />
         <Banner2 />
+        <Features />
         <section className="home__section">
           <header>
             <h2 className="home__section-headline">Frequently asked questions</h2>
